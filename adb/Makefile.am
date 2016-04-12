@@ -30,4 +30,4 @@ adb_CFLAGS += -DHAVE_SYS_UIO_H -DHAVE_PTHREADS -DHAVE_SCHED_H -DHAVE_SYS_UIO_H -
 adb_LDADD =  \
         $(top_builddir)/libcutils/libcutils.la $(top_builddir)/libzipfile/libzipfile.la $(top_builddir)/libmincrypt/libmincrypt.la
 
-adb_LDADD += -lz -lpthread -lssl -lcrypto
+adb_LDADD += -lz -lpthread -lssl -lcrypto -ldl
